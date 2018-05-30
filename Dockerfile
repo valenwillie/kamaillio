@@ -11,4 +11,7 @@ RUN echo "y\ny" | kamdbctl create db.sqlite
 
 RUN kamctl add valen password123
 
+EXPOSE 5060/udp
+EXPOSE 5060/tcp
+
 CMD ["kamailio","-DD","start"]
