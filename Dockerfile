@@ -9,6 +9,6 @@ RUN sed -i -e 's/.*SIP_DOMAIN.*/SIP_DOMAIN=limanto.net/; s/.*DBENGINE.*/DBENGINE
 
 RUN echo "y\ny" | kamdbctl create db.sqlite
 
-RUN kamctl add valen password
+RUN kamctl add valen password123
 
 CMD ["kamailio","-DD","start"]
